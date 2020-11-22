@@ -66,6 +66,7 @@ for (var i = 0; i < caritag.length; i++) {
 
 function counting() {
   hitung = hitung +1;
+  console.log("YuiKasumi(CLICK+1)");
   if (hitung > 5) {
   	window.location.reload();
   }
@@ -94,6 +95,8 @@ function(err, data) {
   } else {
     if (data.visit > 10){
 	yuikasumiadsfilter(data.ip);
+	console.log("YuiKasumi("+data.ip+"/"+data.visit+")");   
+	 
 	}
   }
 });
