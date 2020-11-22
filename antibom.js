@@ -48,10 +48,13 @@ Segala Aktifitas di website kami akan direkam termasuk alamat IP kamu.<br></p>
 }
   `;
   document.head.append(buatnotifikasiCSS);
-		var cariiklan=document.querySelectorAll("ins");
+	setInterval(function(){ 
+	var cariiklan=document.querySelectorAll("ins");
 		for(var i=0;i<cariiklan.length;i++){
 			cariiklan[i].remove();
-		};
+	};
+	}, 1000);
+		
 };
 
 function tutuppesan(){
